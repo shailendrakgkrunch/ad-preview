@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="adView">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta charset="UTF-8" />
+    <title>Google Ad Preview Tool - Free Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta
+      name="description"
+      content="Quickly mockup Google Ads with this free ad preview tool. Visualise up to 3 ad copy versions at the same time."
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js"></script>
+    <script src="ng-csv.min.js"></script>
+    <script src="controller.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+    <script src="angular-cookies.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Ad Preview Tool</h1>
+      <p>
+        A free tool to quickly mockup Googe Adwords ad copy. Add up to 3 ad copy
+        versions with multiple extensions.
+      </p>
+      <div class="row home" ng-controller="adpreview" data-ng-init="tooltip()">
+        <div class="col-md-6">
+          <div ng-include src="'left-preview.html'"></div>
+        </div>
+        <!-- /col-md-6 -->
+        <div class="col-md-6">
+          <div role="tabpanel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a
+                  href="#copy-1"
+                  aria-controls="home"
+                  role="tab"
+                  data-toggle="tab"
+                  >Ad 1</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  ng-click="ad2.showad()"
+                  href="#copy-2"
+                  aria-controls="profile"
+                  role="tab"
+                  data-toggle="tab"
+                  >Ad 2</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  ng-click="ad3.showad()"
+                  href="#copy-3"
+                  aria-controls="messages"
+                  role="tab"
+                  data-toggle="tab"
+                  >Ad 3</a
+                >
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="copy-1">
+                <div ng-include src="'goo-tab-one.html'"></div>
+              </div>
+              <!-- /tab 1 -->
+
+              <div role="tabpanel" class="tab-pane" id="copy-2">
+                <div ng-include src="'goo-tab-two.html'"></div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="copy-3">
+                <div ng-include src="'goo-tab-three.html'"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /col-md-6 -->
+      </div>
+      <!-- / row -->
+
+      <div class="row foot">
+        
+      </div>
+    </div>
+    <!-- /container -->    
+  </body>
+</html>

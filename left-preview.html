@@ -1,0 +1,237 @@
+<div class="goopreview">
+  <a class="headline" href=""
+    >{{ad1.headline}} | {{ad1.headline2}}
+    <span ng-show="ad1.headline3">| {{ad1.headline3}}</span>
+    <span ng-show="ad1.topline">{{ad1.description1}}</span></a
+  ><br />
+  <div class="urlline">
+    <span ng-class="{'_mB': !ad1.greenad, '_mB_green': ad1.greenad}" class="_mB"
+      >Ad</span
+    >
+    <span class="displayurl">{{ad1.displayurl}}</span>
+    <span class="callextension">{{ad1.phonenumber}}</span>
+  </div>
+  <div class="rating" ng-show="ad1.check == 'A'">
+    <span class="stars">4.5 </span><img src="stars.png" /> rating for
+    {{ad1cleanurl}}
+  </div>
+  <span class="description"
+    ><span ng-hide="ad1.topline">{{ad1.description1}} </span
+    >{{ad1.description2}}</span
+  ><br />
+
+  <div class="callouts">
+    {{ad1.callout1}}<span ng-show="ad1.callout2"> &#183; </span
+    >{{ad1.callout2}}<span ng-show="ad1.callout3"> &#183; </span
+    >{{ad1.callout3}}
+  </div>
+  <div class="snippets">
+    {{ad1.snippetheader}}<span ng-show="ad1.snippetheader">:</span>
+    {{ad1.snippet1}}<span ng-show="ad1.snippet2">, </span>{{ad1.snippet2}}<span
+      ng-show="ad1.snippet3"
+      >, </span
+    >{{ad1.snippet3}}
+  </div>
+  <div class="review">
+    <span ng-show="ad1.review" class="reviewQuote">&#8220;</span
+    >{{ad1.review}}<span ng-show="ad1.review" class="reviewQuote">&#8221; </span
+    ><span ng-show="ad1.source" class="source">&#8211; {{ad1.source}}</span>
+  </div>
+  <div class="sitelinks">
+    <ul
+      ng-hide="ad1.sl1des1"
+      class="_gB3"
+      ng-class="{ '_gBb': ad1.sitelinksyes, '_gB3': ad1.sitelinksno}"
+    >
+      <li>
+        <a class="sitelink" href="">{{ad1.sitelink1}}</a
+        ><span ng-show="ad1.sitelink2 && !ad1.sitelink4"> - </span>
+      </li>
+      <li>
+        <a class="sitelink" href="">{{ad1.sitelink2}}</a
+        ><span ng-show="ad1.sitelink3 && !ad1.sitelink4"> - </span>
+      </li>
+      <li><a class="sitelink" href="">{{ad1.sitelink3}}</a></li>
+      <li><a class="sitelink" href="">{{ad1.sitelink4}}</a></li>
+    </ul>
+    <ul ng-show="ad1.sl1des1" class="_G8">
+      <li>
+        <h3><a class="sitelink" href="">{{ad1.sitelink1}}</a></h3>
+        <div class="ads-creative ac">{{ad1.sl1des1}}<br />{{ad1.sl1des2}}</div>
+      </li>
+      <li>
+        <h3><a class="sitelink" href="">{{ad1.sitelink2}}</a></h3>
+        <div class="ads-creative ac">{{ad1.sl2des1}}<br />{{ad1.sl2des2}}</div>
+      </li>
+      <li>
+        <h3><a class="sitelink" href="">{{ad1.sitelink3}}</a></h3>
+        <div class="ads-creative ac">{{ad1.sl3des1}}<br />{{ad1.sl3des2}}</div>
+      </li>
+      <li>
+        <h3><a class="sitelink" href="">{{ad1.sitelink4}}</a></h3>
+        <div class="ads-creative ac">{{ad1.sl4des1}}<br />{{ad1.sl4des2}}</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="goopreview" ng-show="showad2">
+  <a class="headline" href=""
+    >{{ad2.headline}} | {{ad2.headline2}}
+    <span ng-show="ad2.headline3">| {{ad2.headline3}}</span>
+    <span ng-show="ad2.topline">{{ad2.description1}}</span></a
+  ><br />
+  <div class="urlline">
+    <span ng-class="{'_mB': !ad2.greenad, '_mB_green': ad2.greenad}" class="_mB"
+      >Ad</span
+    >
+    <span class="displayurl">{{ad2.displayurl}}</span>
+    <span class="callextension">{{ad2.phonenumber}}</span>
+  </div>
+  <div class="rating" ng-show="ad2.check == 'A'">
+    <span class="stars">4.5 </span><img src="stars.png" /> rating for
+    {{ad2cleanurl}}
+  </div>
+  <span class="description"
+    ><span ng-hide="ad2.topline">{{ad2.description1}} </span
+    >{{ad2.description2}}</span
+  ><br />
+
+  <div class="callouts">
+    {{ad2.callout1}}<span ng-show="ad2.callout2"> &#183; </span
+    >{{ad2.callout2}}<span ng-show="ad2.callout3"> &#183; </span
+    >{{ad2.callout3}}
+  </div>
+  <div class="snippets">
+    {{ad2.snippetheader}}<span ng-show="ad2.snippetheader">:</span>
+    {{ad2.snippet1}}<span ng-show="ad2.snippet2">, </span>{{ad2.snippet2}}<span
+      ng-show="ad2.snippet3"
+      >, </span
+    >{{ad2.snippet3}}
+  </div>
+  <div class="review">
+    <span ng-show="ad2.review" class="reviewQuote">&#8220;</span
+    >{{ad2.review}}<span ng-show="ad2.review" class="reviewQuote">&#8221; </span
+    ><span ng-show="ad2.source" class="source">&#8211; {{ad2.source}}</span>
+  </div>
+  <div class="sitelinks">
+    <ul
+      ng-hide="ad2.sl1des1"
+      class="_gB3"
+      ng-class="{ '_gBb': ad2.sitelinksyes, '_gB3': ad2.sitelinksno}"
+    >
+      <li>
+        <a class="sitelink" href="">{{ad2.sitelink1}}</a
+        ><span ng-show="ad2.sitelink2 && !ad2.sitelink4"> - </span>
+      </li>
+      <li>
+        <a class="sitelink" href="">{{ad2.sitelink2}}</a
+        ><span ng-show="ad2.sitelink3 && !ad2.sitelink4"> - </span>
+      </li>
+      <li><a class="sitelink" href="">{{ad2.sitelink3}}</a></li>
+      <li><a class="sitelink" href="">{{ad2.sitelink4}}</a></li>
+    </ul>
+    <ul ng-show="ad2.sl1des1" class="_G8">
+      <li>
+        <h3><a class="sitelink" href="">{{ad2.sitelink1}}</a></h3>
+        <div class="ads-creative ac">{{ad2.sl1des1}}<br />{{ad2.sl1des2}}</div>
+      </li>
+      <li>
+        <h3><a class="sitelink" href="">{{ad2.sitelink2}}</a></h3>
+        <div class="ads-creative ac">{{ad2.sl2des1}}<br />{{ad2.sl2des2}}</div>
+      </li>
+      <li>
+        <h3><a class="sitelink" href="">{{ad2.sitelink3}}</a></h3>
+        <div class="ads-creative ac">{{ad2.sl3des1}}<br />{{ad2.sl3des2}}</div>
+      </li>
+      <li>
+        <h3><a class="sitelink" href="">{{ad2.sitelink4}}</a></h3>
+        <div class="ads-creative ac">{{ad2.sl4des1}}<br />{{ad2.sl4des2}}</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="goopreview" ng-show="showad3">
+  <a class="headline" href=""
+    >{{ad3.headline}} | {{ad3.headline2}}
+    <span ng-show="ad3.headline3">| {{ad3.headline3}}</span>
+    <span ng-show="ad3.topline">{{ad3.description1}}</span></a
+  ><br />
+  <div class="urlline">
+    <span ng-class="{'_mB': !ad3.greenad, '_mB_green': ad3.greenad}" class="_mB"
+      >Ad</span
+    >
+    <span class="displayurl">{{ad3.displayurl}}</span>
+    <span class="callextension">{{ad3.phonenumber}}</span>
+  </div>
+  <div class="rating" ng-show="ad3.check == 'A'">
+    <span class="stars">4.5 </span><img src="stars.png" /> rating for
+    {{ad3cleanurl}}
+  </div>
+  <span class="description"
+    ><span ng-hide="ad3.topline">{{ad3.description1}} </span
+    >{{ad3.description2}}</span
+  ><br />
+
+  <div class="callouts">
+    {{ad3.callout1}}<span ng-show="ad3.callout2"> &#183; </span
+    >{{ad3.callout2}}<span ng-show="ad3.callout3"> &#183; </span
+    >{{ad3.callout3}}
+  </div>
+  <div class="snippets">
+    {{ad3.snippetheader}}<span ng-show="ad3.snippetheader">:</span>
+    {{ad3.snippet1}}<span ng-show="ad3.snippet2">, </span>{{ad3.snippet2}}<span
+      ng-show="ad3.snippet3"
+      >, </span
+    >{{ad3.snippet3}}
+  </div>
+  <div class="review">
+    <span ng-show="ad3.review" class="reviewQuote">&#8220;</span
+    >{{ad3.review}}<span ng-show="ad3.review" class="reviewQuote">&#8221; </span
+    ><span ng-show="ad3.source" class="source">&#8211; {{ad3.source}}</span>
+  </div>
+  <div class="sitelinks">
+    <ul
+      ng-hide="ad3.sl1des1"
+      class="_gB3"
+      ng-class="{ '_gBb': ad3.sitelinksyes, '_gB3': ad3.sitelinksno}"
+    >
+      <li>
+        <a class="sitelink" href="">{{ad3.sitelink1}}</a
+        ><span ng-show="ad3.sitelink2 && !ad3.sitelink4"> - </span>
+      </li>
+      <li>
+        <a class="sitelink" href="">{{ad3.sitelink2}}</a
+        ><span ng-show="ad3.sitelink3 && !ad3.sitelink4"> - </span>
+      </li>
+      <li><a class="sitelink" href="">{{ad3.sitelink3}}</a></li>
+      <li><a class="sitelink" href="">{{ad3.sitelink4}}</a></li>
+    </ul>
+    <ul ng-show="ad3.sl1des1" class="_G8">
+      <li>
+        <h3><a class="sitelink" href="">{{ad3.sitelink1}}</a></h3>
+        <div class="ads-creative ac">{{ad3.sl1des1}}<br />{{ad3.sl1des2}}</div>
+      </li>
+      <li>
+        <h3><a class="sitelink" href="">{{ad3.sitelink2}}</a></h3>
+        <div class="ads-creative ac">{{ad3.sl2des1}}<br />{{ad3.sl2des2}}</div>
+      </li>
+      <li>
+        <h3><a class="sitelink" href="">{{ad3.sitelink3}}</a></h3>
+        <div class="ads-creative ac">{{ad3.sl3des1}}<br />{{ad3.sl3des2}}</div>
+      </li>
+      <li>
+        <h3><a class="sitelink" href="">{{ad3.sitelink4}}</a></h3>
+        <div class="ads-creative ac">{{ad3.sl4des1}}<br />{{ad3.sl4des2}}</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div>
+  <!--
+     <button class="btn btn-primary"
+        ng-csv="csvExport.getArray()" lazy-load="true" csv-header="csvExport.getHeader()" filename="{{csvExport.filename }}" field-separator="{{separator}}" decimal-separator="{{decimalSeparator}}"
+        >Export to CSV File</button><br /><small>(excluding extensions)</small>
+--></div>

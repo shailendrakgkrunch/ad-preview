@@ -1,0 +1,719 @@
+<br />
+<div class="input-group input-group col-sm-10">
+  <div class="input-group-addon">Headline 1</div>
+  <input
+    id="headline"
+    class="form-control input"
+    ng-model="ad3.headline"
+    type="text"
+  />
+  <div class="input-group-btn">
+    <button
+      id="btnPost"
+      type="button"
+      class="btn btn-success"
+      ng-disabled="ad3.headline.length < 1 || ad3.headline.length >= 30"
+      ng-class="{'btn-danger': ad3.headline.length >= 31 }"
+    >
+      {{ 30 - ad3.headline.length }}
+    </button>
+  </div>
+</div>
+<div class="input-group input-group col-sm-10">
+  <div class="input-group-addon">Headline 2</div>
+  <input
+    id="headline"
+    class="form-control input"
+    ng-model="ad3.headline2"
+    type="text"
+  />
+  <div class="input-group-btn">
+    <button
+      id="btnPost"
+      type="button"
+      class="btn btn-success"
+      ng-disabled="ad3.headline2.length < 1 || ad3.headline2.length >= 30"
+      ng-class="{'btn-danger': ad3.headline2.length >= 31 }"
+    >
+      {{ 30 - ad3.headline2.length }}
+    </button>
+  </div>
+</div>
+
+<div class="input-group input-group col-sm-10">
+  <div class="input-group-addon">Headline 3</div>
+  <input
+    id="headline"
+    class="form-control input"
+    ng-model="ad3.headline3"
+    type="text"
+  />
+  <div class="input-group-btn">
+    <button
+      id="btnPost"
+      type="button"
+      class="btn btn-success"
+      ng-disabled="ad3.headline3.length < 1 || ad3.headline3.length >= 30"
+      ng-class="{'btn-danger': ad3.headline3.length >= 31 }"
+    >
+      {{ 30 - ad3.headline3.length }}
+    </button>
+  </div>
+</div>
+
+<div class="input-group input-group col-sm-10">
+  <div class="input-group-addon">Description 1</div>
+  <input
+    id="description1"
+    class="form-control input"
+    ng-model="ad3.description1"
+    type="text"
+  />
+  <div class="input-group-btn">
+    <button
+      id="btnPost"
+      type="button"
+      class="btn btn-success"
+      ng-disabled="ad3.description1.length < 1 || ad3.description1.length >= 90"
+      ng-class="{'btn-danger': ad3.description1.length >= 91 }"
+    >
+      {{ 90 - ad3.description1.length }}
+    </button>
+  </div>
+</div>
+
+<div class="input-group input-group col-sm-10">
+  <div class="input-group-addon">Description 2</div>
+  <input
+    id="description2"
+    class="form-control input"
+    ng-model="ad3.description2"
+    type="text"
+  />
+  <div class="input-group-btn">
+    <button
+      id="btnPost"
+      type="button"
+      class="btn btn-success"
+      ng-disabled="ad3.description2.length < 1 || ad3.description2.length >= 90"
+      ng-class="{'btn-danger': ad3.description2.length >= 91 }"
+    >
+      {{ 90 - ad3.description2.length }}
+    </button>
+  </div>
+</div>
+
+<div class="input-group input-group col-sm-10">
+  <div class="input-group-addon">Display URL</div>
+  <input
+    id="displayurl"
+    class="form-control input"
+    ng-model="ad3.displayurl"
+    ng-change="ad3.urlChange()"
+    type="text"
+  />
+  <div class="input-group-btn">
+    <button
+      id="btnPost"
+      type="button"
+      class="btn btn-success"
+      ng-disabled="ad3.displayurl.length < 1 || ad3.displayurl.length >= 35"
+      ng-class="{'btn-danger': ad3.displayurl.length >= 35 }"
+    >
+      {{ 35 - ad3.displayurl.length }}
+    </button>
+  </div>
+</div>
+
+<input
+  type="checkbox"
+  ng-true-value="'A'"
+  ng-false-value="'B'"
+  ng-change="ad3.ratingModel()"
+  ng-model="key"
+/>
+Add Seller Ratings &#32; &#32;
+<!--<input type="checkbox" ng-model='ad3.topline'/> Add Extended Headline-->
+<!--<br /><input type="checkbox" ng-model='ad3.greenad'/> Green Ad Label-->
+
+<br /><br />
+
+<!-- start accordion -->
+<div
+  class="panel-group"
+  id="accordion"
+  role="tablist"
+  aria-multiselectable="true"
+>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a
+          class="collapsed"
+          role="button"
+          data-toggle="collapse"
+          data-parent="#accordion"
+          href="#ad3sitelinks"
+          aria-expanded="false"
+          aria-controls="ad3sitelinks"
+        >
+          Sitelinks
+        </a>
+      </h4>
+    </div>
+    <div
+      id="ad3sitelinks"
+      class="panel-collapse collapse"
+      role="tabpanel"
+      aria-labelledby="headingOne"
+    >
+      <div class="panel-body">
+        <!-- start sitelinks -->
+        <div class="sitelinks">
+          <div class="input-group input-group col-sm-8">
+            <div class="input-group-addon addon-white">Sitelink 1</div>
+            <input
+              id="sitelink1"
+              class="form-control input"
+              ng-model="ad3.sitelink1"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sitelink1.length < 1 || ad3.sitelink1.length >= 25"
+                ng-class="{'btn-danger': ad3.sitelink1.length >= 26 }"
+              >
+                {{ 25 - ad3.sitelink1.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-10">
+            <div class="input-group-addon">Sitelink Des 1</div>
+            <input
+              id="sl1des1"
+              class="form-control input"
+              ng-model="ad3.sl1des1"
+              ng-change="ad3.sitChange()"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sl1des1.length < 1 || ad3.sl1des1.length >= 35"
+                ng-class="{'btn-danger': ad3.sl1des1.length >= 35 }"
+              >
+                {{ 35 - ad3.sl1des1.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-10">
+            <div class="input-group-addon">Sitelink Des 2</div>
+            <input
+              id="sl1des2"
+              class="form-control input"
+              ng-model="ad3.sl1des2"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sl1des2.length < 1 || ad3.sl1des2.length >= 35"
+                ng-class="{'btn-danger': ad3.sl1des2.length >= 35 }"
+              >
+                {{ 35 - ad3.sl1des2.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-8">
+            <div class="input-group-addon addon-white">Sitelink 2</div>
+            <input
+              id="sitelink2"
+              class="form-control input"
+              ng-model="ad3.sitelink2"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sitelink2.length < 1 || ad3.sitelink2.length >= 25"
+                ng-class="{'btn-danger': ad3.sitelink2.length >= 26 }"
+              >
+                {{ 25 - ad3.sitelink2.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-10">
+            <div class="input-group-addon">Sitelink Des 1</div>
+            <input
+              id="sl2des1"
+              class="form-control input"
+              ng-model="ad3.sl2des1"
+              ng-change="ad3.sitChange()"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sl2des1.length < 1 || ad3.sl2des1.length >= 35"
+                ng-class="{'btn-danger': ad3.sl2des1.length >= 35 }"
+              >
+                {{ 35 - ad3.sl2des1.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-10">
+            <div class="input-group-addon">Sitelink Des 2</div>
+            <input
+              id="sl2des2"
+              class="form-control input"
+              ng-model="ad3.sl2des2"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sl2des2.length < 1 || ad3.sl2des2.length >= 35"
+                ng-class="{'btn-danger': ad3.sl2des2.length >= 35 }"
+              >
+                {{ 35 - ad3.sl2des2.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-8">
+            <div class="input-group-addon addon-white">Sitelink 3</div>
+            <input
+              id="sitelink3"
+              class="form-control input"
+              ng-model="ad3.sitelink3"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sitelink3.length < 1 || ad3.sitelink3.length >= 25"
+                ng-class="{'btn-danger': ad3.sitelink3.length >= 26 }"
+              >
+                {{ 25 - ad3.sitelink3.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-10">
+            <div class="input-group-addon">Sitelink Des 1</div>
+            <input
+              id="sl3des1"
+              class="form-control input"
+              ng-model="ad3.sl3des1"
+              ng-change="ad3.sitChange()"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sl3des1.length < 1 || ad3.sl3des1.length >= 35"
+                ng-class="{'btn-danger': ad3.sl3des1.length >= 35 }"
+              >
+                {{ 35 - ad3.sl3des1.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-10">
+            <div class="input-group-addon">Sitelink Des 2</div>
+            <input
+              id="sl3des2"
+              class="form-control input"
+              ng-model="ad3.sl3des2"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sl3des2.length < 1 || ad3.sl3des2.length >= 35"
+                ng-class="{'btn-danger': ad3.sl3des2.length >= 35 }"
+              >
+                {{ 35 - ad3.sl3des2.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-8">
+            <div class="input-group-addon addon-white">Sitelink 4</div>
+            <input
+              id="sitelink4"
+              class="form-control input"
+              ng-model="ad3.sitelink4"
+              ng-change="ad3.sitChange()"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sitelink4.length < 1 || ad3.sitelink4.length >= 25"
+                ng-class="{'btn-danger': ad3.sitelink4.length >= 26 }"
+              >
+                {{ 25 - ad3.sitelink4.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-10">
+            <div class="input-group-addon">Sitelink Des 1</div>
+            <input
+              id="sl4des1"
+              class="form-control input"
+              ng-model="ad3.sl4des1"
+              ng-change="ad3.sitChange()"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sl4des1.length < 1 || ad3.sl4des1.length >= 35"
+                ng-class="{'btn-danger': ad3.sl4des1.length >= 35 }"
+              >
+                {{ 35 - ad3.sl4des1.length }}
+              </button>
+            </div>
+          </div>
+          <div class="input-group input-group col-sm-10">
+            <div class="input-group-addon">Sitelink Des 2</div>
+            <input
+              id="sl4des2"
+              class="form-control input"
+              ng-model="ad3.sl4des2"
+              type="text"
+            />
+            <div class="input-group-btn">
+              <button
+                id="btnPost"
+                type="button"
+                class="btn btn-success"
+                ng-disabled="ad3.sl4des2.length < 1 || ad3.sl4des2.length >= 35"
+                ng-class="{'btn-danger': ad3.sl4des2.length >= 35 }"
+              >
+                {{ 35 - ad3.sl4des2.length }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a
+          class="collapsed"
+          role="button"
+          data-toggle="collapse"
+          data-parent="#accordion"
+          href="#ad3callextension"
+          aria-expanded="false"
+          aria-controls="ad3callextension"
+        >
+          Call Extension
+        </a>
+      </h4>
+    </div>
+    <div
+      id="ad3callextension"
+      class="panel-collapse collapse"
+      role="tabpanel"
+      aria-labelledby="headingTwo"
+    >
+      <div class="panel-body">
+        <div class="input-group input-group col-sm-8">
+          <div class="input-group-addon addon-white">Phone #</div>
+          <input
+            id="phonenumber"
+            class="form-control input"
+            ng-model="ad3.phonenumber"
+            type="tel"
+          />
+          <div class="input-group-btn">
+            <button
+              id="btnPost"
+              type="button"
+              class="btn btn-success"
+              ng-disabled="ad3.phonenumber.length < 1 || ad3.phonenumber.length >= 25"
+              ng-class="{'btn-danger': ad3.phonenumber.length >= 26 }"
+            >
+              {{ 25 - ad3.phonenumber.length }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a
+          class="collapsed"
+          role="button"
+          data-toggle="collapse"
+          data-parent="#accordion"
+          href="#ad3callouts"
+          aria-expanded="false"
+          aria-controls="ad3callouts"
+        >
+          Callouts
+        </a>
+      </h4>
+    </div>
+    <div
+      id="ad3callouts"
+      class="panel-collapse collapse"
+      role="tabpanel"
+      aria-labelledby="headingThree"
+    >
+      <div class="panel-body">
+        <div class="input-group input-group col-sm-8">
+          <div class="input-group-addon addon-white">Callout 1</div>
+          <input
+            id="callout1"
+            class="form-control input"
+            ng-model="ad3.callout1"
+            type="text"
+          />
+          <div class="input-group-btn">
+            <button
+              id="btnPost"
+              type="button"
+              class="btn btn-success"
+              ng-disabled="ad3.callout1.length < 1 || ad3.callout1.length >= 25"
+              ng-class="{'btn-danger': ad3.callout1.length >= 26 }"
+            >
+              {{ 25 - ad3.callout1.length }}
+            </button>
+          </div>
+        </div>
+        <div class="input-group input-group col-sm-8">
+          <div class="input-group-addon addon-white">Callout 2</div>
+          <input
+            id="callout2"
+            class="form-control input"
+            ng-model="ad3.callout2"
+            type="text"
+          />
+          <div class="input-group-btn">
+            <button
+              id="btnPost"
+              type="button"
+              class="btn btn-success"
+              ng-disabled="ad3.callout2.length < 1 || ad3.callout2.length >= 25"
+              ng-class="{'btn-danger': ad3.callout2.length >= 26 }"
+            >
+              {{ 25 - ad3.callout2.length }}
+            </button>
+          </div>
+        </div>
+        <div class="input-group input-group col-sm-8">
+          <div class="input-group-addon addon-white">Callout 3</div>
+          <input
+            id="callout3"
+            class="form-control input"
+            ng-model="ad3.callout3"
+            type="text"
+          />
+          <div class="input-group-btn">
+            <button
+              id="btnPost"
+              type="button"
+              class="btn btn-success"
+              ng-disabled="ad3.callout3.length < 1 || ad3.callout3.length >= 25"
+              ng-class="{'btn-danger': ad3.callout3.length >= 26 }"
+            >
+              {{ 25 - ad3.callout3.length }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a
+          class="collapsed"
+          role="button"
+          data-toggle="collapse"
+          data-parent="#accordion"
+          href="#ad3snippets"
+          aria-expanded="false"
+          aria-controls="ad3snippets"
+        >
+          Structured Snippets
+        </a>
+      </h4>
+    </div>
+    <div
+      id="ad3snippets"
+      class="panel-collapse collapse"
+      role="tabpanel"
+      aria-labelledby="headingFour"
+    >
+      <div class="panel-body">
+        <div class="input-group input-group col-sm-8">
+          <div class="input-group-addon addon-white">Header</div>
+          <select
+            class="form-control input"
+            id="sel1"
+            ng-model="ad3.snippetheader"
+          >
+            <option value="" selected disabled>Choose...</option>
+            <option value="Amenities">Amenities</option>
+            <option value="Brands">Brands</option>
+            <option value="Courses">Courses</option>
+            <option value="Degree programs">Degree programs</option>
+            <option value="Destinations">Destinations</option>
+            <option value="Featured hotels">Featured hotels</option>
+            <option value="Insurance coverage">Insurance coverage</option>
+            <option value="Neighborhoods">Neighborhoods</option>
+            <option value="Service catalog">Service catalog</option>
+            <option value="Shows">Shows</option>
+            <option value="Styles">Styles</option>
+            <option value="Types">Types</option>
+          </select>
+        </div>
+
+        <div class="input-group input-group col-sm-8">
+          <div class="input-group-addon addon-white">Value 1</div>
+          <input
+            id="callout1"
+            class="form-control input"
+            ng-model="ad3.snippet1"
+            type="text"
+          />
+          <div class="input-group-btn">
+            <button
+              id="btnPost"
+              type="button"
+              class="btn btn-success"
+              ng-disabled="ad3.snippet1.length < 1 || ad3.snippet1.length >= 25"
+              ng-class="{'btn-danger': ad3.snippet1.length >= 26 }"
+            >
+              {{ 25 - ad3.snippet1.length }}
+            </button>
+          </div>
+        </div>
+        <div class="input-group input-group col-sm-8">
+          <div class="input-group-addon addon-white">Value 2</div>
+          <input
+            id="callout2"
+            class="form-control input"
+            ng-model="ad3.snippet2"
+            type="text"
+          />
+          <div class="input-group-btn">
+            <button
+              id="btnPost"
+              type="button"
+              class="btn btn-success"
+              ng-disabled="ad3.snippet2.length < 1 || ad3.snippet2.length >= 25"
+              ng-class="{'btn-danger': ad3.snippet2.length >= 26 }"
+            >
+              {{ 25 - ad3.snippet2.length }}
+            </button>
+          </div>
+        </div>
+        <div class="input-group input-group col-sm-8">
+          <div class="input-group-addon addon-white">Value 3</div>
+          <input
+            id="callout3"
+            class="form-control input"
+            ng-model="ad3.snippet3"
+            type="text"
+          />
+          <div class="input-group-btn">
+            <button
+              id="btnPost"
+              type="button"
+              class="btn btn-success"
+              ng-disabled="ad3.snippet3.length < 1 || ad3.snippet3.length >= 25"
+              ng-class="{'btn-danger': ad3.snippet3.length >= 26 }"
+            >
+              {{ 25 - ad3.snippet3.length }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a
+          class="collapsed"
+          role="button"
+          data-toggle="collapse"
+          data-parent="#accordion"
+          href="#ad3reviews"
+          aria-expanded="false"
+          aria-controls="ad3reviews"
+        >
+          Review Extension
+        </a>
+      </h4>
+    </div>
+    <div
+      id="ad3reviews"
+      class="panel-collapse collapse"
+      role="tabpanel"
+      aria-labelledby="headingFive"
+    >
+      <div class="panel-body">
+        <div class="input-group input-group col-sm-10">
+          <div class="input-group-addon addon-white">
+            Review<br /><br />Source
+          </div>
+          <input
+            id="review1"
+            class="form-control input"
+            ng-model="ad3.review"
+            type="text"
+          />
+          <input
+            id="source1"
+            class="form-control input"
+            ng-model="ad3.source"
+            type="text"
+          />
+          <div class="input-group-btn">
+            <button
+              id="btnPost"
+              type="button"
+              class="btn btn-success"
+              ng-disabled="(ad3.review.length + ad3.source.length) < 1 || (ad3.review.length + ad3.source.length) >= 67"
+              ng-class="{'btn-danger': (ad3.review.length + ad3.source.length) >= 68 }"
+            >
+              {{ 67 - (ad3.review.length + ad3.source.length) }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end accordion -->
